@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1,
+                   maximum-scale=1,
+                   user-scalable=no">
+
+    <title>Synonym Blaster 2.0</title>
+
+    <meta name="description"
+          content="Космическая игра на поиск синонимов">
+
+    <meta name="theme-color"
+          content="#000000">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Экран загрузки -->
+
+    <div id="loading-screen">
+
+        <h1>Synonym Blaster</h1>
+
+        <p>Подготовка космоса...</p>
+
+    </div>
+
+
+    <!-- Игровое поле -->
+
+    <div id="game-container"></div>
+
+
+    <!-- Интерфейс -->
+
+    <div id="ui">
+
+        <div id="top-panel">
+
+            <div id="score">
+                Очки:
+                <span id="score-value">0</span>
+            </div>
+
+            <div id="round">
+                Раунд:
+                <span id="round-value">1</span>
+            </div>
+
+        </div>
+
+        <div id="question-panel">
+
+            <div id="question-word">
+                Загрузка...
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Three.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.164/build/three.min.js"></script>
+
+
+    <!-- Наши модули -->
+
+    <script src="js/words.js"></script>
+
+    <script src="js/asteroid.js"></script>
+
+    <script src="js/laser.js"></script>
+
+    <script src="js/effects.js"></script>
+
+    <script src="js/ui.js"></script>
+
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>
